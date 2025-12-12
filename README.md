@@ -1,4 +1,4 @@
-# Expense Manager App — Requirements & Setup
+# Daily Expense Manager — Requirements & Setup
 
 ## Requirements
 - XAMPP (includes Apache + MySQL / MariaDB) — tested with XAMPP on Windows (PHP 7.4+ recommended)
