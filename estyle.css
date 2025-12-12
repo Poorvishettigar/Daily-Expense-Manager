@@ -1,0 +1,229 @@
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fafc; /* Softer light background */
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #2a7d32; /* Dark green */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Input Section Styling */
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #e8f5e9, #dcedc8); /* Gradient background */
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.input-section:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+}
+
+.input-section label {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.input-section select,
+.input-section input[type="number"],
+.input-section input[type="date"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #a5d6a7;
+    border-radius: 8px;
+    width: 250px;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.input-section select:focus,
+.input-section input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+.input-section button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.input-section button:hover {
+    background: linear-gradient(135deg, #388e3c, #43a047);
+    transform: translateY(-2px);
+}
+
+/* Budget Section Styling */
+.budget-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f1f8e9;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.budget-section label {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.budget-section input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #c5e1a5;
+    border-radius: 8px;
+    width: 220px;
+    outline: none;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.budget-section input:focus {
+    border-color: #7cb342;
+    box-shadow: 0 0 5px rgba(124, 179, 66, 0.5);
+}
+
+.budget-section button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.budget-section button:hover {
+    background: linear-gradient(135deg, #388e3c, #43a047);
+    transform: translateY(-2px);
+}
+
+#budget-info, #remaining-budget-info {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* Expenses List Styling */
+.expenses-list {
+    margin: 20px auto;
+    padding: 25px;
+    background: linear-gradient(135deg, #ffffff, #e8eaf6);
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expenses-list h2 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    background-color: #fafafa;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+tfoot td {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #2e7d32;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    padding: 8px 15px;
+    background: linear-gradient(135deg, #f44336, #e57373);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(135deg, #d32f2f, #e53935);
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .input-section, .budget-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-section input, .budget-section input, .input-section select {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

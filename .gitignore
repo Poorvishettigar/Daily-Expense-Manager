@@ -1,0 +1,22 @@
+# Sensitive backend config files
+db_connection.php
+backend.php
+expense_manager.php
+config.php
+*.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# XAMPP specific cache (if any)
+*.bak
+*.tmp
+
+# Node or Python (if used later)
+node_modules/
+__pycache__/
