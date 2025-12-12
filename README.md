@@ -8,8 +8,6 @@
 
 ## Files (project)
 Place the uploaded project files into a folder under XAMPP's `htdocs`, e.g.:
-`C:\xampp\htdocs\your-folder\`
-
 Example files included in this project:
 - `index.php`, `eindex.php`, `register.php`, `login.php`, `expense_manager.php`, `db_connection.php`
 - Frontend scripts/CSS: `script.js`, `escript.js`, `style.css`, `estyle.css`, etc. 
@@ -50,8 +48,11 @@ Example files included in this project:
      ```
    - Use the registration/login pages, then the expense manager.
 
-## Troubleshooting
-- If blank pages appear: enable PHP error reporting in `php.ini` or add at top of PHP files:
-  ```php
-  ini_set('display_errors', 1);
-  error_reporting(E_ALL);
+##Image for reference:
+
+`C:\xampp\htdocs\your-folder\`<img width="1125" height="519" alt="register" src="https://github.com/user-attachments/assets/cc8dc7ff-6588-42b8-ad31-faed9a6dd714" />
+<img width="773" height="461" alt="signin" src="https://github.com/user-attachments/assets/246a8ab7-0cdb-4f5b-af9b-0ade0233f685" />
+<img width="1179" height="889" alt="dem" src="https://github.com/user-attachments/assets/236e417c-90cc-459f-b643-cb6fa719820a" />
+<img width="1765" height="251" alt="db" src="https://github.com/user-attachments/assets/d813e4b1-2c31-44da-acfe-d2c4968ab790" />
+
+
